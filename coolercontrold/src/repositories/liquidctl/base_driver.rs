@@ -42,6 +42,7 @@ pub enum BaseDriver {
     KrakenX3,        // kraken3.py
     KrakenZ3,        // kraken3.py
     MockKrakenZ3,    // kraken3.py
+    LianLiUni,       // lian_li.py
     MpgCooler,       // msi.py
     EvgaPascal,      // nvidia.py - NOT currently Supported - requires unsafe ops
     RogTuring,       // nvidia.py - NOT currently Supported - requires unsafe ops
