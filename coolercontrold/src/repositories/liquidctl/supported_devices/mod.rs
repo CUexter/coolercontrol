@@ -31,6 +31,7 @@ pub mod kraken_x3;
 pub mod kraken_z3;
 pub mod kraken_z3_mock;
 pub mod legacy_690_lc;
+pub mod lian_li_uni;
 pub mod modern_690_lc;
 pub mod msi_acpi_ec;
 pub mod nzxt_epsu;
