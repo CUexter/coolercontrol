@@ -18,7 +18,7 @@
 
 use std::collections::HashMap;
 
-use crate::device::{ChannelInfo, DeviceInfo, DriverInfo, DriverType, SpeedOptions};
+use crate::device::{ChannelInfo, DeviceInfo, DriverInfo, DriverType, LightingMode, SpeedOptions};
 use crate::repositories::liquidctl::base_driver::BaseDriver;
 use crate::repositories::liquidctl::liqctld_client::DeviceResponse;
 use crate::repositories::liquidctl::supported_devices::device_support::DeviceSupport;
@@ -65,5 +65,9 @@ impl DeviceSupport for LianLiUniSupport {
             },
             ..Default::default()
         }
+    }
+
+    fn get_color_channel_modes(&self, _channel_name: Option<&str>) -> Vec<LightingMode> {
+        vec![]
     }
 }
